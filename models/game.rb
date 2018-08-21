@@ -20,8 +20,9 @@ class Game
       return "Scissors Wins"
     elsif @player2 == "rock" && @player1 == "scissors"
       return "Rock Wins"
-    else @player2 == "paper" && @player1 == "rock"
+    elsif @player2 == "paper" && @player1 == "rock"
       return "Paper Wins"
+    else return "No One Wins! You didn't pick an available option"
     end
   end
 
