@@ -18,14 +18,14 @@ def test_game_is_draw
 end
 
 def test_scissors_wins
-  assert_equal("Scissors Wins",@game3.get_result)
+  assert_equal("Player 1 wins by picking Scissors",@game3.get_result)
 end
 
 def test_paper_wins
-  assert_equal("Paper Wins", @game1.get_result)
+  assert_equal("Player 1 wins by picking Paper", @game1.get_result)
 end
 
 def test_rock_wins
-  assert_equal("Rock Wins",@game2.get_result)
+  assert_equal("Player 1 wins by picking Rock",@game2.get_result)
 end
 end

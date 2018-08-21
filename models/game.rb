@@ -11,17 +11,17 @@ class Game
     if @player1 == @player2
       return "It's a Draw!"
     elsif @player1 == "scissors" && @player2 == "paper"
-      return "Scissors Wins"
+      return "Player 1 wins by picking Scissors"
     elsif @player1 == "rock" && @player2 == "scissors"
-      return "Rock Wins"
+      return "Player 1 wins by picking Rock"
     elsif @player1 == "paper" && @player2 == "rock"
-      return "Paper Wins"
+      return "Player 1 wins by picking Paper"
     elsif @player2 == "scissors" && @player1 == "paper"
-      return "Scissors Wins"
+      return "Player 2 wins by picking Scissors"
     elsif @player2 == "rock" && @player1 == "scissors"
-      return "Rock Wins"
+      return "Player 2 wins by picking Rock"
     elsif @player2 == "paper" && @player1 == "rock"
-      return "Paper Wins"
+      return "Player 2 wins by picking Paper"
     else return "No One Wins! You didn't pick an available option"
     end
   end
