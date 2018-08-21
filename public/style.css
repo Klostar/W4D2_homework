@@ -1,4 +1,15 @@
 body {
-  background-color: pink
-  
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 40px ;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+
+}
+
+nav{
+  text-align: left;
+  font-size: 15px ;
+
 }
