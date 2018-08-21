@@ -5,6 +5,14 @@ require('pry-byebug')
 require_relative('./models/game.rb')
 also_reload ('./models/*')
 
+get '/' do
+  erb(:home)
+end
+
+get '/rules' do
+  erb(:rules)
+end
+
 get '/:player1/:player2' do
   game = Game.new(params[:player1],params[:player2])
   # return "#{game.get_result()}"
